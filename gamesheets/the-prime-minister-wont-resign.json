@@ -1,0 +1,149 @@
+{
+    "Name": "The Prime Minister Won't Resign",
+    "Author": "Oliver Darkshire",
+    "Source": "https://twitter.com/deathbybadger/status/1545372201402114049",
+    "Stats": [
+        "Wounds",
+        "Media",
+        "Trail"
+    ],
+    "Events": {
+        "Endless Corridors": {
+            "Rolls": [1, 2],
+            "Events": {
+                "You wander into a work event. You leave holding a beer.": {
+                    "Rolls": [1],
+                    "Stats": {
+                        "Trail": 1
+                    }
+                },
+                "You get stuck in a ministerial revolving door": {
+                    "Rolls": [2],
+                    "Stats": {
+                        "Media": 1
+                    }
+                },
+                "It's the chancellor, holding a bag marked SWAG": {
+                    "Rolls": [3],
+                    "Stats": {
+                        "Trail": 1
+                    }
+                },
+                "You briefly get locked in combat with a cabinet": {
+                    "Rolls": [4],
+                    "Stats": {
+                        "Wounds": 1
+                    }
+                },
+                "You detect the smell of fear and silver spoons": {
+                    "Rolls": [5],
+                    "Stats": {
+                        "Trail": 2
+                    }
+                },
+                "You stop to cure a passerby of scrofula": {
+                    "Rolls": [6],
+                    "Stats": {
+                        "Media": 1
+                    }
+                }
+            }
+        },
+        "The Battle Rages On": {
+            "Rolls": [3, 4],
+            "Events": {
+                "You summon the royal lion. It's not as friendly as you remember.": {
+                    "Rolls": [1],
+                    "Stats": {
+                        "Wounds": 1
+                    }
+                },
+                "You battle through a room full of red tape": {
+                    "Rolls": [2],
+                    "Stats": {
+                        "Wounds": 1,
+                        "Trail": 1
+                    }
+                },
+                "You are ambushed with a cake. Ow.": {
+                    "Rolls": [3],
+                    "Stats": {
+                        "Wounds": 1,
+                        "Media": 1
+                    }
+                },
+                "You are confronted by a minister. You end them.": {
+                    "Rolls": [4],
+                    "Stats": {
+                        "Wounds": 1
+                    }
+                },
+                "A secretary of state catches you with a lucky blow.": {
+                    "Rolls": [5],
+                    "Stats": {
+                        "Wounds": 1,
+                        "Trail": 1
+                    }
+                },
+                "You choke someone to death with the Magna Carta": {
+                    "Rolls": [6],
+                    "Stats": {
+                        "Wounds": 1,
+                        "Trail": 1
+                    }
+                }
+            }
+        },
+        "Affairs of State": {
+            "Rolls": [5, 6],
+            "Events": {
+                "One of your relatives has casused an international scandal": {
+                    "Rolls": [1, 2],
+                    "Stats": {
+                        "Media": 1
+                    }
+                },
+                "You lose your crown in the viscera and have to find it": {
+                    "Rolls": [3],
+                    "Stats": {
+                        "Media": 1
+                    }
+                },
+                "Your dogs pick up a smell. The smell of vengeance.": {
+                    "Rolls": [4],
+                    "Stats": {
+                        "Trail": 2
+                    }
+                },
+                "You have to stop to celebrate another jubilee. It's quite time consuming.": {
+                    "Rolls": [5, 6],
+                    "Stats": {
+                        "Media": 1
+                    }
+                }
+            }
+        }
+    },
+    "Rules": [
+        {
+            "Outcome": "You Lost!",
+            "Condition": {"Wounds": 10},
+            "Description": "You are defeated and your rampage comes to an end. Your funeral is suitably expensive and a colossus is raised over your tomb."
+        },
+        {
+            "Outcome": "Draw!",
+            "Condition": {"Media": 10},
+            "Description": "Your identity is uncovered and the cameras force you back to the palace to nurse your injured pride."
+        },
+        {
+            "Outcome": "You Win!",
+            "Condition": {"Trail": 10},
+            "Description": "You finally catch up to the prime minister and bring an end to this farce. You stand on a pile of your defeated enemies and howl at the uncaring gods above."
+        },
+        {
+            "Outcome": "Sudden Brexit!",
+            "Condition": {"Rolls": [6, 6, 6]},
+            "Description": "You accidentally leave the European Union, and drown in the ocean."
+        }
+    ]
+}

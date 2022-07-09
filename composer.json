@@ -1,0 +1,20 @@
+{
+    "name": "beryllium/one-page-rpg",
+    "description": "One-Page RPG game player",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Beryllium\\OnePageRpg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kevin Boyd",
+            "email": "kevin.boyd@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^6.0"
+    }
+}
